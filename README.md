@@ -7,5 +7,5 @@ Concatenates byte literals
 ## Examples
 ```rust
 use proc_concat_bytes::concat_bytes;
-//let c_str = std::ffi::CStr::from_bytes_with_nul(&concat_bytes!(b"Hello World!", b'\0')).unwrap();
+let c_str = std::ffi::CStr::from_bytes_with_nul(&concat_bytes!(b"Hello World!", b'\0')[..]).unwrap();
 ```
