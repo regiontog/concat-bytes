@@ -1,0 +1,16 @@
+[package]
+name = "proc-concat-bytes-impl"
+version = "0.1.0"
+authors = ["Erlend Tobiassen <erlend.tobiassen@gmail.com>"]
+license = "MIT OR Apache-2.0"
+edition = "2018"
+
+[lib]
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+proc-macro-hack = "0.5"
+syn = "0.15"
+proc-macro2 = "0.4"
+quote = "0.6"

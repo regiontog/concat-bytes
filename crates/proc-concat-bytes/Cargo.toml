@@ -1,0 +1,14 @@
+[package]
+name = "proc-concat-bytes"
+version = "0.1.0"
+authors = ["Erlend Tobiassen <erlend.tobiassen@gmail.com>"]
+description = "Like std::concat but for byte strings"
+repository = "https://github.com/regiontog/concat-bytes"
+documentation = "https://docs.rs/proc-concat-bytes/0.1.0/proc-concat-bytes/"
+license = "MIT OR Apache-2.0"
+readme = "../../README.md"
+edition = "2018"
+
+[dependencies]
+proc-macro-hack = "0.5"
+proc-concat-bytes-impl = { version = "0.1.0", path = "../proc-concat-bytes-impl" }
